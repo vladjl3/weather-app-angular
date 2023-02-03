@@ -1,1 +1,15 @@
-<div class="weather-widget__search"></div>
+<div class="weather-widget__search">
+  <form>
+    <input
+      placeholder="Serach location..."
+      type="text"
+      id="city"
+      [(ngModel)]="city"
+      (keyup)="search()"
+      class="weather-widget__search-box-input"
+    />
+    <datalist id="cities">
+      <option *ngFor="let city of ['London']" [value]="city"></option>
+    </datalist>
+  </form>
+</div>
