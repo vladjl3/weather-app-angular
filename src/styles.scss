@@ -6,10 +6,11 @@ html {
 }
 
 body {
-  width: 100%;
-  height: 100%;
+  color: white;
   margin: 0;
   font-family: Poppins, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   background-attachment: fixed;
   background: rgb(157, 114, 255);
   background: radial-gradient(
@@ -18,4 +19,16 @@ body {
     rgba(233, 200, 148, 1) 100%
   );
   background-size: 100%;
+}
+
+a,
+a:active,
+a:visited {
+  color: white;
+  text-decoration: none;
+  transition: opacity ease 0.4s;
+}
+
+a:hover {
+  opacity: 0.8;
 }
