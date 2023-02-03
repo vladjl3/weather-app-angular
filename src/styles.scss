@@ -19,6 +19,11 @@ body {
     rgba(233, 200, 148, 1) 100%
   );
   background-size: 100%;
+  height: 100%;
+}
+
+p {
+  margin: 0;
 }
 
 a,
@@ -31,4 +36,14 @@ a:visited {
 
 a:hover {
   opacity: 0.8;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
