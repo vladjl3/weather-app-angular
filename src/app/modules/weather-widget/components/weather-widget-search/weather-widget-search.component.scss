@@ -1,4 +1,8 @@
 .weather-widget {
+  &__search {
+    position: relative;
+  }
+
   &__search-box-input {
     font-size: 24px;
     font-weight: 600;
@@ -17,5 +21,26 @@
   &__search-box-input::placeholder {
     color: white;
     opacity: 0.2;
+  }
+
+  &__auocomplete-options {
+    width: 100%;
+    background-color: white;
+    color: #545454;
+    position: absolute;
+    top: 80px;
+    padding: 24px 40px;
+    box-sizing: border-box;
+    border-radius: 48px;
+  }
+
+  &__auocomplete-options-item {
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  &__auocomplete-options-item:hover {
+    color: black;
+    cursor: pointer;
   }
 }

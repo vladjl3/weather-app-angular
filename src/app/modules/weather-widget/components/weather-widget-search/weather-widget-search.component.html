@@ -4,12 +4,24 @@
       placeholder="Serach location..."
       type="text"
       id="city"
+      name="city"
       [(ngModel)]="city"
       (keyup)="search()"
       class="weather-widget__search-box-input"
     />
-    <datalist id="cities">
-      <option *ngFor="let city of ['London']" [value]="city"></option>
-    </datalist>
+    <div
+      *ngIf="cities$ | async as cities"
+      id="cities"
+      class="weather-widget__auocomplete-options"
+    >
+      <option
+        *ngFor="let city of cities"
+        [value]="city"
+        class="weather-widget__auocomplete-options-item"
+        (click)="selectCity(city.name)"
+      >
+        {{ city.name }}
+      </option>
+    </div>
   </form>
 </div>
