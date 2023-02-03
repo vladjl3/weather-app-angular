@@ -1,0 +1,66 @@
+.weather-widget {
+  &__data {
+    width: fit-content;
+    background-color: rgba($color: #000000, $alpha: 0.2);
+    border-radius: 48px;
+    padding: 48px 64px;
+  }
+
+  &__data-location {
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 4px;
+  }
+
+  &__data-location-city {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__temperature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+
+  &__data-temperature-number {
+    font-size: 144px;
+    line-height: 215px;
+    position: relative;
+  }
+
+  &__data-temperature-measure {
+    font-size: 24px;
+    line-height: 36px;
+    position: absolute;
+    right: -32px;
+    top: 40px;
+  }
+
+  &__data-description {
+    margin-top: -30px;
+  }
+
+  &__details {
+    row-gap: 24px;
+  }
+
+  &__details-item {
+    min-width: 224px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__details-item:not(:last-child) {
+    margin-right: 24px;
+    padding-right: 24px;
+    border-right: 1px white solid;
+  }
+
+  &__details-item-icon-title-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+}

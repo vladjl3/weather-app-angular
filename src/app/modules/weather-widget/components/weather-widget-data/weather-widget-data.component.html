@@ -1,51 +1,71 @@
 <div class="weather-widget__data">
-  <div class="weather-widget__data-location">
-    <div class="weather-widget__current-icon"></div>
-    <div class="weather-widget__data-location-group">
+  <div class="row weather-widget__data-location">
+    <img
+      class="weather-widget__current-icon"
+      src="../../../../../assets/images/sunny.png"
+    />
+    <div class="col">
       <div class="weather-widget__data-location-city">Павлодар</div>
       <div class="weather-widget__data-date">Понедельник 15/01/2023</div>
     </div>
   </div>
   <div class="weather-widget__current">
-    <div class="row">
-      <div class="col sb">
-        <div class="weather-widget__temperature">
-          <div class="weather-widget__data-temperature-number">15</div>
-          <div class="weather-widget__data-temperature-measure">
-            <sup>o</sup>C
-          </div>
-        </div>
-        <div class="weather-widget__data-description">В основном облачно</div>
+    <div class="col weather-widget__temperature">
+      <div class="weather-widget__data-temperature-number">
+        15
+        <span class="weather-widget__data-temperature-measure">
+          <sup>o</sup>C
+        </span>
       </div>
+      <div class="weather-widget__data-description">В основном облачно</div>
     </div>
-    <div class="row">
+    <div class="col weather-widget__details">
       <div class="row">
-        <div class="col">
-          <img src="" alt="" class="visibility-icon" />
-          <p>Видимость</p>
-          <p>10км</p>
-        </div>
-        <div class="col">
-          <img src="" alt="" class="feels-like-icon" />
-          <p>Ощущается как</p>
-          <div class="weather-widget__temperature">
-            <div class="weather-widget__data-temperature-number">12</div>
-            <div class="weather-widget__data-temperature-measure">
-              <sup>o</sup>C
-            </div>
+        <div class="row weather-widget__details-item">
+          <div class="weather-widget__details-item-icon-title-group">
+            <img
+              src="../../../../../assets/images/visibility-icon.png"
+              alt=""
+              class="weather-widget__details-item-icon visibility-icon"
+            />
+            <p class="weather-widget__details-item-title">Видимость</p>
           </div>
+          <p class="weather-widget__details-item-value">10км</p>
+        </div>
+        <div class="row weather-widget__details-item">
+          <div class="weather-widget__details-item-icon-title-group">
+            <img
+              src="../../../../../assets/images/feels-like-icon.png"
+              alt=""
+              class="feels-like-icon"
+            />
+            <p class="weather-widget__details-item-title">Ощущается как</p>
+          </div>
+          <div class="weather-widget__details-item-value">12<sup>o</sup>C</div>
         </div>
       </div>
       <div class="row">
-        <div class="col">
-          <img src="" alt="" class="humidity-icon" />
-          <p>Влажность</p>
-          <p>100%</p>
+        <div class="row weather-widget__details-item">
+          <div class="weather-widget__details-item-icon-title-group">
+            <img
+              src="../../../../../assets/images/humidity-icon.png"
+              alt=""
+              class="humidity-icon"
+            />
+            <p class="weather-widget__details-item-title">Влажность</p>
+          </div>
+          <p class="weather-widget__details-item-value">100%</p>
         </div>
-        <div class="col">
-          <img src="" alt="" class="feels-like-icon" />
-          <p>Ветер</p>
-          <p>10 км/ч</p>
+        <div class="row weather-widget__details-item">
+          <div class="weather-widget__details-item-icon-title-group">
+            <img
+              src="../../../../../assets/images/wind-icon.png"
+              alt=""
+              class="wind-icon"
+            />
+            <p class="weather-widget__details-item-title">Ветер</p>
+          </div>
+          <p class="weather-widget__details-item-value">10 км/ч</p>
         </div>
       </div>
     </div>
