@@ -4,6 +4,8 @@ import { WeatherWidgetComponent } from './container/weather-widget.component';
 import { WeatherWidgetSearchComponent } from './components/weather-widget-search/weather-widget-search.component';
 import { WeatherWidgetDataComponent } from './components/weather-widget-data/weather-widget-data.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { WeatherService } from './services/weather.service';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,8 @@ import { FormsModule } from '@angular/forms';
     WeatherWidgetSearchComponent,
     WeatherWidgetDataComponent,
   ],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, HttpClientModule],
   exports: [WeatherWidgetComponent],
+  providers: [WeatherService],
 })
 export class WeatherWidgetModule {}
