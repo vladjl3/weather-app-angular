@@ -34,7 +34,7 @@
     border-radius: 48px;
   }
 
-  &__auocomplete-options-item {
+  &__auocomplete-options-item:not(:last-child) {
     line-height: 36px;
     margin-bottom: 16px;
   }

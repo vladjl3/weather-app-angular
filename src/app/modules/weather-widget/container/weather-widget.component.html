@@ -1,4 +1,8 @@
 <div class="weather-widget">
-  <app-weather-widget-search></app-weather-widget-search>
-  <app-weather-widget-data></app-weather-widget-data>
+  <app-weather-widget-search
+    (cityNameEmmitter)="fetchWeatherData($event)"
+  ></app-weather-widget-search>
+  <app-weather-widget-data
+    [weatherData]="weatherData"
+  ></app-weather-widget-data>
 </div>

@@ -1,16 +1,19 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import
+  {
+    ChangeDetectionStrategy,
+    Component,
+    Input
+  } from '@angular/core';
+import { WeatherData } from '../../interfaces/weather-data.interface';
 
 @Component({
   selector: 'app-weather-widget-data',
   templateUrl: './weather-widget-data.component.html',
   styleUrls: ['./weather-widget-data.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class WeatherWidgetDataComponent implements OnInit {
+export class WeatherWidgetDataComponent {
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  @Input('weatherData') weatherDataProps!: WeatherData;
 }
