@@ -2,7 +2,7 @@
 
 The first version of app. Needs to refactor and implment some features as change measure units, ability to add places to "saved", use local storge etc.
 
-Boiler plate of this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8.
+Boiler plate of this project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.8. 
 
 ## Development server
 
